@@ -419,7 +419,7 @@ static iomux_v3_cfg_t const usdhc2_cd_pad[][1*2] = {
 	},
 	{
 		/* Non-DART */
-		IOMUX_PADS(PAD_KEY_COL4__GPIO4_IO14 | MUX_PAD_CTRL(NO_PAD_CTRL)),
+		IOMUX_PADS(PAD_GPIO_63__GPIO2_IO31 | MUX_PAD_CTRL(NO_PAD_CTRL)),
 	}
 };
 #endif
@@ -487,7 +487,7 @@ static int usdhc2_cd_gpio[] = {
 	/* DART */
 	IMX_GPIO_NR(1, 6),
 	/* Non-DART */
-	IMX_GPIO_NR(4, 14)
+	IMX_GPIO_NR(2, 31)
 };
 
 int board_mmc_getcd(struct mmc *mmc)
